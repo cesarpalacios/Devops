@@ -20,6 +20,6 @@ jobs:
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/project-path # reemplaza con la ruta donde está tu repositorio en EC2
+            cd ~/Devops # reemplaza con la ruta donde está tu repositorio en EC2
             kubectl apply -f k8s/deployment.yml
             kubectl apply -f k8s/service.yml
